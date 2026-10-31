@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Build output
+frontend/dist/
+frontend/src-tauri/target/
+frontend/src-tauri/gen/
+
+# AI models and large downloads stay on disk, never in git
+models/*
+!models/.gitkeep
+
+# Local data and secrets
+*.db
+*.sqlite
+.env
+.env.*
+
+# Test screenshots and logs
+frontend/test-output/
+*.log
+
+# Editor and OS
+.vscode/
+.idea/
+Thumbs.db
+
+# Backend local data
+backend/data/
+.pytest_cache/
